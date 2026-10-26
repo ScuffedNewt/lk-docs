@@ -4,17 +4,17 @@ When collaborating with multiple developers on a Lorekeeper project, it's essent
 
 ## The Golden Rules
 
-These are written in absolutes, but they are just guidelines to help you and your hired devs work effectively together. Feel free to use as many or as little as you like, whatever works best for your team!
+These are written in absolutes, but they are just guidelines to help you and your hired developers work effectively together. Feel free to use as many or as little as you like, whatever works best for your team!
 
 ### **For the Project Manager / Lead:**
 
 - Define clear tasks for each developer. Set deadlines as needed.
 - Use a shared repository separate from your production site (e.g. GitHub).
 - Use a kanban board or similar tool to track progress and tasks. (ex. Trello, GitHub issues, Discord threads, whatever works for your team)
-- If possible, limit access to your live site to only those who absolutely need it.
-    - Why limit access? Unfortunately, bad actors exist. The fewer people with access, the lower the risk of something going wrong.
+- If possible, limit access to your server/live site to only those who absolutely need it.
+  - Why limit access? Unfortunately, bad actors exist. The fewer people with access, the lower the risk of something going wrong.
 - Enforce code reviews and testing before merging changes.
-    - Use the following template if you'd like:
+  - Use the following template if you'd like:
     ```md
     - **Purpose of Changes:** Briefly describe what this change is intended to accomplish.
     - **Issue Link (Optional):** Link to the relevant issue or task description.
@@ -32,32 +32,33 @@ These are written in absolutes, but they are just guidelines to help you and you
 
 #### Environments
 
-Most Lorekeeper projects will have at least two environments, it's good to at least be familiar with the concepts:
+Most Lorekeeper projects will have at least two environments that work occurs in. It's a good idea to familiarize yourself with them and what they're called:
 
-- Local / Dev — each dev works on their own machine.
-- Staging / QA / Testing — a shared testing environment. Many sites WILL NOT have a staging environment.
+- Local / Dev — each developer works on their own machine.
+- Staging / QA / Testing — a shared testing environment. Many sites **will not** have a staging environment.
 - Production / Live — the site your users see and interact with.
 
 ---
 
-### **For the Developers:**
+### **For Developers:**
 
-- All work happens in a hosted repository (e.g. GitHub), NOT the live site.
+The following are some best-practice recommendations for how work on a given project should go. As above, these are written in absolutes, but are ultimately just guidelines. Nonetheless, they are recommended for very good reasons!
+
+- All work happens in a hosted repository (e.g. GitHub), **not** the live site.
 - Use branches for every change, no exceptions.
-- Nothing goes straight to “live”. NEVER MODIFY CODE DIRECTLY ON LIVE.  
+- **Never send un-reviewed, untested changes directly to a live site**.  
     Changes flow:
     feature branch → pull request → review → staging (optional) → production.
 - When possible, get features reviewed by at least one other person. It's not just about code quality, but also about shared knowledge. It makes it harder if only one person knows how something works.
 - Small, frequent pull requests beat big ones that are hard to review.
 - Write clear, descriptive commit messages. We recommend using the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format.
-- Definition of Done = works as described, tested, and documented. Make sure you ask for clarification if something is unclear.
+- Something is considered "done" when it works as described, is tested, and is documented. Make sure you ask for clarification if something is unclear.
 - Communicate with your team if something is blocked or taking longer than expected.
 - Write things down (how to run, how to deploy, what changed...)
 
 ## Branching Strategy
 
 `main` — production-ready code.  
-`dev` — integration branch if lots of parallel work.  
+`dev` — integration branch, especially if there is a lot of parallel work or you have a staging environment.  
 `feature/<short-name>` — one branch per feature (e.g., `feature/character-subtypes`).  
 `hotfix/<short-name>` — for urgent production fixes.  
-

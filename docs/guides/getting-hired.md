@@ -1,7 +1,5 @@
 # Getting Hired (for Developers)
 
-Thank you to [itinerare](https://github.com/itinerare) for providing the basis of this guide!
-
 Lorekeeper as a whole is a very artist centered community. While code commissions have points in common with (likely more familiar) art commissions, they also have differences that can make for some pitfalls— both for those taking commissions and for those commissioning work.
 
 If you're looking to hire individuals for your project, we recommend reading [Hiring Developers](hiring-devs.md) first to understand what to look for and how to set expectations. If you want to get hired, we also recommend reading this! It will help you understand some of the concerns project owners may have and recommended practices to follow.
@@ -22,9 +20,10 @@ Before taking on any work, make sure you have the following in place:
     - If you don’t have one, consider creating one. It protects both parties.
     - Also make sure that it is readily accessible e.g. outside of Discord and can be linked to and/or referenced easily.
 
-In fact, the ToS is so important that we recommend not working with anyone who does not have one, or who refuses to agree to yours. In fact, it is so so important, we are going to have an entire section dedicated to it:
-
 ### Terms of Service (ToS)
+
+Having and upholding a ToS is so important that we strongly caution against working with anyone who does not have one, or who refuses to agree to yours. As a thorough ToS is so vital, the following section outlines what it should accomplish in this context and provides some recommendations.
+
 The purpose of this document is manifold.
 
 Broadly, it should communicate:
@@ -45,8 +44,7 @@ That is to say, it’s generally reasonable to promise that code works as intend
 
 However, it’s not practical to be responsible for its maintenance in perpetuity, especially if it breaks as a consequence of others’ actions, updates, etc.
 
-!!! warning
-    Note that this does not necessarily preclude you from taking on additional work to maintain it, including for pay, just absolve you of the obligation to do so.
+Note that this does not necessarily preclude you from taking on additional work to maintain it, including for pay, just absolve you of the obligation to do so.
 
 !!! danger
     Remember that your ToS is not a polite request for people to abide by if they feel like it.
